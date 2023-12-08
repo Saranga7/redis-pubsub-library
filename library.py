@@ -7,7 +7,6 @@ from datetime import datetime, timedelta
 class LibraryDatabase:
     def __init__(self):
         self.redis_client = redis.Redis(host='localhost', port = 6379, decode_responses=True) # Connect to Redis
-        self.redis_client.flushdb() # Flush entire database
         self.remove_puntuations = str.maketrans("", "", string.punctuation) # to remove punctuations
 
     def add_book(self, isbn, title, author, copies, description, expiry_days = 7, **kwargs):

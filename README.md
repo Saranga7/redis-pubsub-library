@@ -25,14 +25,16 @@ The work has been done entirely in Python.
 
 If you use Windows as your operating system, you will have to enable Windows Subsystem for Linux (WSL2) on your system. Check the website for more details. Or, you can consider installing a virtual machine (e.g., VirtualBox) and a Linux distribution onto it (some popular distros: Ubuntu, Linux Mint, Debian, Fedora/CentOS, Arch Linux) so that you can go through the lab within the virtual environment.
 
-2. Create virtual environment and activate (optional step) 
+2. [Optional step] Create virtual environment and activate it (linux, macOS)
 ```
 python -m venv .venv
 source .venv/bin/activate
 ```
+
 3. Clone repository
 ```
 git clone https://github.com/Saranga7/redis-pubsub-library.git
+cd redis-pubsub-library
 ```
 
 3. Install required packages
@@ -42,6 +44,25 @@ pip install -r requirements.txt
 4. Launch redis server
 ```
 redis-sever
+```
+
+
+## To run
+
+In one terminal
+```
+python subscriber.py
+```
+
+In another terminal
+```
+python publisher.py
+```
+
+To retrieve book information using keywords:
+
+```
+python retrieve_from_keyword.py <keyword of your choice>
 ```
 
 

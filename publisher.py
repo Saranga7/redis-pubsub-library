@@ -19,7 +19,7 @@ def add_books(library):
                     "Harper Lee", 
                     3, 
                     "Classic novel about racial injustice", 
-                    expiry_days = 14, language = "English", year = 1960, edition = "1st")
+                    expiry_days = 30, language = "English", year = 1960, edition = "1st")
     
     library.add_book("1003", 
                      "The Hobbit", 
@@ -33,7 +33,7 @@ def add_books(library):
                      "J.K. Rowling", 
                      9, 
                      "Adventure, magical, fantasy, novel with mystical elements; first part of the Harry Potter series", 
-                     expiry_days = 14, language = "English")
+                     expiry_days = 21, language = "English")
 
     library.add_book("1005", 
                      "The Invisible Man", 
@@ -46,7 +46,8 @@ def add_books(library):
                      "Deep Learning",
                      "Ian Goodfellow, Yoshua Bengio, Aaron Courville",
                      5,
-                     "Reference book for AI and machine learning")
+                     "Reference book for AI and machine learning",
+                     expiry_days = 30)
     
 
 def list_all_books(library):
@@ -92,7 +93,6 @@ def main():
     # Sleep for a while to simulate a book expiry
     print("\n\nSimulating days delay in seconds. Please wait...")
     time.sleep(10)
-
 
     # Check expiry dates
     print("\n\nChecking expiry status of the books...")

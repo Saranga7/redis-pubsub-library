@@ -1,10 +1,10 @@
 from library import LibraryDatabase
 
-# Callback function to handle news messages
 def news_callback(message):
+    # Callback function to handle news messages
     print(f"News: {message}")
 
-# Main function
+
 def main():
     # Create an instance of the LibraryDatabase class for subscribing
     subscriber = LibraryDatabase()
