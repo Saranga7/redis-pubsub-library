@@ -28,14 +28,18 @@ If you use Windows as your operating system, you will have to enable Windows Sub
 2. Create virtual environment and activate (optional step) 
 ```
 python -m venv .venv
-
+source .venv/bin/activate
 ```
-2. Install required packages
+3. Clone repository
+```
+git clone https://github.com/Saranga7/redis-pubsub-library.git
+```
+
+3. Install required packages
 ```
 pip install -r requirements.txt
 ```
-
-3. Launch redis server
+4. Launch redis server
 ```
 redis-sever
 ```
