@@ -66,3 +66,8 @@ python retrieve_from_keyword.py <keyword of your choice>
 ```
 
 
+## Explanations
+
+Can be found in this [report](https://docs.google.com/document/d/1jIxvkQpJQd78ZmhyTkZnlUI8TEABrU2vOc5ThATMrhU/edit?usp=sharing). 
+
+
